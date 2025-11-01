@@ -9,7 +9,7 @@
 ### 🧠 About Me
 I'm a Web Design and Development student at **NAIT**, focusing on building **responsive**, **accessible**, and **visually appealing** websites.
 
-I enjoy blending creativity with technology — transforming ideas into interactive designs through code and design tools.
+I like combining technology and creativity by using design tools and code to turn concepts into interactive designs.
 
 🎨 I love working with **JavaScript**, **HTML**, and **CSS** 
 
@@ -42,9 +42,7 @@ I enjoy blending creativity with technology — transforming ideas into interact
 ---
 
 ### 🧶 Outside of Coding
-When I’m not coding, I enjoy crocheting and exploring creative ideas that inspire my web projects.  
-I believe every website tells a story — and I love bringing those stories to life through design.
-
+When I'm not coding, I like to crochet and come up with original ideas for web projects. I think every website has a story to tell, and I love using design to make those stories come to life.
 ---
 
 ### 🌍 Connect with Me
