@@ -1,8 +1,8 @@
 <!-- ## Hi there 👋 -->
 
-# <center>👋 Hello there, I'm Jada-Lee Hamilton</center>
+# <h1 align="center">👋 Hello there, I'm Jada-Lee Hamilton</h1>
 
-### <center>💻 Web Design & Development Student at NAIT | Passionate about creative digital storytelling and front-end design</center>
+### <h3 align="center">💻 Web Design & Development Student at NAIT | Passionate about creative digital storytelling and front-end design</h3>
 
 ---
 
