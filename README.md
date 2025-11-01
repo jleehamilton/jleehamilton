@@ -42,7 +42,11 @@ I like combining technology and creativity by using design tools and code to tur
 ---
 
 ### 🧶 Outside of Coding
-When I'm not coding, I like to crochet and come up with original ideas for web projects. I think every website has a story to tell, and I love using design to make those stories come to life.
+
+When I’m not coding, I enjoy crocheting and exploring creative ideas that inspire my web projects. 
+
+I believe every website has a story to tell, and I love using design to make those stories come to life.
+
 ---
 
 ### 🌍 Connect with Me
