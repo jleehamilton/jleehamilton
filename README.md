@@ -7,7 +7,8 @@
 ---
 
 ### 🧠 About Me
-I'm a Web Design and Development student at **NAIT**, focusing on building **responsive**, **accessible**, and **visually appealing** websites.  
+I'm a Web Design and Development student at **NAIT**, focusing on building **responsive**, **accessible**, and **visually appealing** websites.
+
 I enjoy blending creativity with technology — transforming ideas into interactive designs through code and design tools.
 
 🎨 I love working with **JavaScript**, **HTML**, and **CSS** 
