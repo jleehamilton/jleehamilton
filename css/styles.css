@@ -1,3 +1,73 @@
 /* body {
     background-color: palevioletred;
 } */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+section {
+  position: relative;
+  transform-style: inherit;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero > .container {
+    padding: 50vh 0;
+    text-align: center;
+}
+
+
+.about-me-hero::before {
+    background-image: url("../img/hello-hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.learn-hero::before {
+    background-image: url("../img/learn-hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+.crochet-hero::before {
+    background-image: url("../img/crochet-hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -3;
+}
+
+.conclusion-hero::before {
+    background-image: url("../img/conclusion-hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -4;
+}

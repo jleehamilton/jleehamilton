@@ -7,29 +7,35 @@
 
     <title>Jada's Website</title>
 
-    <!-- Styles -->
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    
 
     <!-- TailwindCSS Play CDN Link -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Scripts -->
      <!-- <script src="js/main.js" defer></script> -->
 
      
 </head>
-<body class="bg-pink-900 text-white text-slate-900 ">
+<body class="bg-pink-900 text-white text-slate-900 w-0px">
 
 <main class="p-10 flex flex-col gap-5">
     <h1 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold">👋 Hello there, I'm Jada-Lee Hamilton</h1>
     <h2 class="text-center text-md md:text-lg lg:text-xl font-semibold">💻 Web Design & Development Student at NAIT | Passionate about creative digital storytelling and front-end design</h2>
     
     <hr class="border border-2 border-rose-300">
-    
-    <section class="flex flex-col gap-5">
+    <section class="hero about-me-hero" id="about-me-hero">
+      <div class="container">
         <h3 class="text-md md:text-lg lg:text-xl font-semibold">🧠 About Me</h3>
+      </div>
+    </section>
+    <section class="flex flex-col gap-5 text-center">
+        
         <p>I'm a Web Design and Development student at <strong>NAIT</strong>, focusing on building <strong>responsive</strong>, <strong>accessible</strong>, and <strong>visually appealing</strong> websites.</p>
         
         <p>I like combining technology and creativity by using design tools and code to turn concepts into interactive designs.</p>
@@ -38,32 +44,13 @@
     </section>
     
     <hr class="border border-2 border-rose-300">
-    
-    <section class="flex flex-col gap-5">
-        <h3 class="text-md md:text-lg lg:text-xl font-semibold">🛠️ Skills & Tools</h3>
-        
-        <div class="flex flex-wrap gap-1 w-2/3">
-          <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML Badge for GitHub">
-          <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS Badge for GitHub">
-          <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SAAS Badge for GitHub">
-          <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS Badge for GitHub">
-          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Javascript Badge for GitHub">
-          <img src="https://img.shields.io/badge/phpmyadmin-6C78AF?style=for-the-badge&logo=phpmyadmin&logoColor=white" alt="PHPMyAdmin Badge for GitHub">
-          <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Badge for GitHub">
-          <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Badge for GitHub">
-          <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma Badge for GitHub">
-          <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap Badge for GitHub">
-          <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge for GitHub">
-          <img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black" alt="Adobe Photoshop Badge for GitHub">
-          <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white" alt="Adobe Illustrator Badge for GitHub">
-        </div>
-    </section>
-    
-    <hr class="border border-2 border-rose-300">
-    
-    <section class="flex flex-col gap-5">
+    <section class="hero learn-hero">
+      <div class="container">
         <h3 class="text-md md:text-lg lg:text-xl font-semibold">📚 Currently Learning</h3>
-        <ul class="list-disc list-inside p-3">
+      </div>
+    </section>
+    <section class="text-center">
+        <ul class="list-disc list-inside">
             <li>⚛️ PHP</li>
             <li>🧩 MySQL</li>
             <li>🌐 SEO Best Practices</li>
@@ -72,27 +59,26 @@
     </section>
     
     <hr class="border border-2 border-rose-300">
-    
-    <section class="flex flex-col gap-5">
+    <section class="hero crochet-hero">
+      <div class="container">
         <h3 class="text-md md:text-lg lg:text-xl font-semibold">🧶 Outside of Coding</h3>
+      </div>
+    </section>
+    <section class="flex flex-col gap-5 text-center">
         <p>When I’m not coding, I enjoy crocheting and exploring creative ideas that inspire my web projects.</p>
         <p>I believe every website has a story to tell, and I love using design to make those stories come to life.</p>
     </section>
     
     <hr class="border border-2 border-rose-300">
-    
-    <section class="flex flex-col gap-5">
-        <h3 class="text-md md:text-lg lg:text-xl font-semibold">🌍 Connect with Me</h3>
-        
-        <div class="flex gap-1">
-          <a href="https://jadaleehamilton.com"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Porfolio Badge for Github"></a>
-          <a href="mailto:jhamilton44@nait.ca"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge for GitHub"></a>
-        </div>
+    <section class="hero conclusion-hero">
+      <div class="container">
+        <h3 class="text-md md:text-lg lg:text-xl font-semibold">Goodbye !!!</h3>
+      </div>
     </section>
     
-    <hr class="border border-2 border-rose-300">
-    
-    <p class="italic">✨ Thanks for visiting my profile! Feel free to explore my repositories and projects.</p>
+    <section class="flex items-center justify-center h-screen">
+        <p class="italic">✨ Thanks for visiting my profile! Feel free to explore my repositories and projects.</p>
+    </section>
 </main>
 
 </body>
