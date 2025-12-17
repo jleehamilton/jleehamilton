@@ -1,0 +1,72 @@
+body {
+  background-image: linear-gradient(to right, #e52e71, #ff8a00, purple);
+}
+
+/* Cascade Layers */
+
+@layer first-layer, second-layer;
+
+h1 {
+  font-family: sans-serif;
+  margin: 1em;
+  padding: 0.2em;
+  color: darkred;
+  background-color: green;
+  text-decoration: overline #ff8a00 !important;
+  box-shadow: 5px 5px lightgreen !important;
+}
+
+@layer first-layer {
+  h1 {
+    color: grey;
+    background-color: #fbcfe8 !important;
+    text-decoration: line-through grey;
+    box-shadow: -5px -5px lightblue !important;
+    font-style: normal;
+    font-weight: normal !important;
+  }
+
+  .card-1 {
+    margin: 5%;
+    background-color: #fff;
+    height: 200px;
+    box-shadow: 10px 100px 10px lightgreen !important;
+    position: relative !important;
+    top: 20px !important;
+  }
+
+  .card-2 {
+    margin: 5%;
+    background-color: #fbcfe8;
+    height: 200px;
+    box-shadow: 10px 100px 10px lightgreen !important;
+    position: relative;
+    top: 40px;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+}
+
+@layer second-layer {
+  h1 {
+    color: lightblue;
+    background: lightgoldenrodyellow !important;
+    text-decoration: underline lightblue;
+    box-shadow: -5px 5px lightcoral !important;
+    font-style: italic;
+    font-weight: bold !important;
+    align-items: center;
+  }
+
+  .card-1 {
+    margin: 5%;
+    background-color: #fff;
+    height: 200px;
+    box-shadow: 10px 20px lightgreen !important;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+  }
+}
