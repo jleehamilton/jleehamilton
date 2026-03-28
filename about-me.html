@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a website for my portfolio">
 
-    <title>Jada's Website</title>
+    <title>Jada's Portfolio | About Me</title>
 
     <!-- TailwindCSS Play CDN Link -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
-    <style type="text/tailwindcss">
-        @custom-variant hover (&:hover);
-    </style>
 
     <!-- Styles -->
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
@@ -27,7 +22,6 @@
      
 </head>
 <body class="bg-rose-50 text-black w-0px">
-
 <header>
   <nav class="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
@@ -80,11 +74,61 @@
   </nav>
 </header>
 
-
 <main class="p-10 flex flex-col gap-5">
-    <div>
-        <img src="https://images.pexels.com/photos/7394377/pexels-photo-7394377.jpeg" alt="hero image" class="w-full h-96 object-cover rounded-lg">
-    </div>
+    <h1 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold">👋 Hello there, I'm Jada-Lee Hamilton</h1>
+    <h2 class="text-center text-md md:text-lg lg:text-xl font-semibold">💻 Web Design & Development Student at NAIT | Passionate about creative digital storytelling and front-end design</h2>
+    
+    <hr class="border border-2 border-rose-300">
+    <section class="hero about-me-hero" id="about-me-hero">
+      <div class="container">
+        <h3 class="text-md md:text-lg lg:text-xl font-semibold">🧠 About Me</h3>
+      </div>
+    </section>
+    <section class="flex flex-col gap-5 text-center">
+        
+        <p>I'm a Web Design and Development student at <strong>NAIT</strong>, focusing on building <strong>responsive</strong>, <strong>accessible</strong>, and <strong>visually appealing</strong> websites.</p>
+        
+        <p>I like combining technology and creativity by using design tools and code to turn concepts into interactive designs.</p>
+        
+        <p>🎨 I love working with <strong>JavaScript</strong>, <strong>HTML</strong>, and <strong>CSS</strong>.</p>
+    </section>
+    
+    <hr class="border border-2 border-rose-300">
+    <section class="hero learn-hero">
+      <div class="container">
+        <h3 class="text-md md:text-lg lg:text-xl font-semibold">📚 Currently Learning</h3>
+      </div>
+    </section>
+    <section class="text-center">
+        <ul class="list-disc list-inside">
+            <li>⚛️ PHP</li>
+            <li>🧩 MySQL</li>
+            <li>🌐 SEO Best Practices</li>
+            <li>🖥️ Designing Responsive Websites</li>
+        </ul>
+    </section>
+    
+    <hr class="border border-2 border-rose-300">
+    <section class="hero crochet-hero">
+      <div class="container">
+        <h3 class="text-md md:text-lg lg:text-xl font-semibold">🧶 Outside of Coding</h3>
+      </div>
+    </section>
+    <section class="flex flex-col gap-5 text-center">
+        <p>When I’m not coding, I enjoy crocheting and exploring creative ideas that inspire my web projects.</p>
+        <p>I believe every website has a story to tell, and I love using design to make those stories come to life.</p>
+    </section>
+    
+    <hr class="border border-2 border-rose-300">
+    <section class="hero conclusion-hero">
+      <div class="container">
+        <h3 class="text-md md:text-lg lg:text-xl font-semibold">Goodbye !!!</h3>
+      </div>
+    </section>
+    
+    <section class="flex items-center justify-center h-screen">
+        <p class="italic">✨ Thanks for visiting my profile! Feel free to explore my repositories and projects.</p>
+    </section>
 </main>
 
 </body>
