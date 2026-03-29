@@ -34,23 +34,23 @@
       <div class="relative flex h-20 items-center">
           
         <div class="flex flex-1 items-center lg:justify-between sm:items-stretch sm:justify-start">
-          <div>
-              <h1 class="text-xl font-bold">Jada-Lee Hamilton</h1>
-          </div>
-          <!-- Logo -->
-          <div class="flex shrink-0 items-center">
-            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=rose&shade=200" alt="Your Company" class="h-8 w-auto" />
-          </div>
-          <!--Desktop Navigation Links -->
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-4">
-              <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-              <a href="/" aria-current="page" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Home</a>
-              <a href="about-me.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">About Me</a>
-              <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Projects</a>
-              <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Contact</a>
+            <div>
+                <h1 class="text-xl font-bold text-rose-100">Jada-Lee Hamilton</h1>
             </div>
-          </div>
+            <!-- Logo -->
+            <div class="flex shrink-0 items-center">
+            <img src="img/jada-lee-hamilton-logo.svg" alt="Jada-Lee Hamilton Logo" class="h-8 w-auto" />
+            </div>
+            <!--Desktop Navigation Links -->
+            <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                <a href="/" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Home</a>
+                <a href="about-me.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">About Me</a>
+                <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Projects</a>
+                <a href="contact.html" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Contact</a>
+                </div>
+            </div>
         </div>
         <div class="absolute inset-y-0 right-10 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -71,10 +71,10 @@
     <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
       <div class="space-y-1 px-10 pt-2 pb-5 text-end">
         <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-        <a href="/" aria-current="page" class="block rounded-md hover:bg-rose-100 hover:text-rose-800 px-3 py-2 text-base font-medium text-white">Home</a>
+        <a href="/" class="block rounded-md hover:bg-rose-100 hover:text-rose-800 px-3 py-2 text-base font-medium text-gray-300">Home</a>
         <a href="about-me.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">About Me</a>
         <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">Projects</a>
-        <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">Contact</a>
+        <a href="contact.html" aria-current="page" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800 text-white">Contact</a>
       </div>
     </el-disclosure>
   </nav>
@@ -85,18 +85,56 @@
     <div>
         <img src="https://images.pexels.com/photos/7394377/pexels-photo-7394377.jpeg" alt="hero image" class="w-full h-96 object-cover rounded-lg">
     </div>
-    <div>
+    <div class="lg:mx-auto">
         <h1 class="text-2xl font-bold">Get in Touch</h1>
         <p class="text-lg">Feel free to reach out to me!</p>
 
         <ul class="list-disc list-inside">
             <li>Email: <a href="mailto:jadalee.a.hamilton@gmail.com" class="text-rose-500 hover:underline">jadalee.a.hamilton@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/jada-lee-hamilton/" class="text-rose-500 hover:underline" target="_blank">Jada-Lee Hamilton</a></li>
+            <!-- <li>LinkedIn: <a href="https://www.linkedin.com/in/jada-lee-hamilton/" class="text-rose-500 hover:underline" target="_blank">Jada-Lee Hamilton</a></li> -->
+             <li>Phone: <a href="tel:+1234567890" class="text-rose-500 hover:underline">+1 (709) 763-6888</a></li>
         </ul>
 
         <p class="text-lg">Contact form coming soon!</p>
 
     </div>
+    <section class=" py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md mx-auto bg-gray-400/50 p-8 rounded-2xl shadow-sm border border-gray-100">
+            <div class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-900">Get in touch</h2>
+            <p class="mt-2 text-gray-600">Have a project in mind? Let's talk.</p>
+            </div>
+
+            <!-- Replace 'your-endpoint' with your actual backend or service like Formspree -->
+            <form action="#" method="POST" class="space-y-6">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                <input type="text" name="name" id="name" required 
+                class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-rose-800/50 focus:border-transparent outline-none transition duration-200" 
+                placeholder="Jane Doe">
+            </div>
+
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input type="email" name="email" id="email" required 
+                class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-rose-800/50 focus:border-transparent outline-none transition duration-200" 
+                placeholder="jane@example.com">
+            </div>
+
+            <div>
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" required 
+                class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-rose-800/50 focus:border-transparent outline-none transition duration-200" 
+                placeholder="Reason for contacting..."></textarea>
+            </div>
+
+            <button type="submit" 
+                class="w-full bg-rose-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-800/50 focus:ring-offset-2 transition duration-200 ease-in-out transform active:scale-[0.98]">
+                Send Message
+            </button>
+            </form>
+        </div>
+    </section>
 </main>
 
 </body>

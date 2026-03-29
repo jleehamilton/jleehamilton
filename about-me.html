@@ -12,6 +12,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 
+    <style type="text/tailwindcss">
+        @custom-variant hover (&:hover);
+    </style>
+
     <!-- Styles -->
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
@@ -29,18 +33,19 @@
           
         <div class="flex flex-1 items-center lg:justify-between sm:items-stretch sm:justify-start">
           <div>
-              <h1 class="text-xl font-bold">Jada-Lee Hamilton</h1>
+              <h1 class="text-xl font-bold text-rose-100">Jada-Lee Hamilton</h1>
           </div>
           <!-- Logo -->
           <div class="flex shrink-0 items-center">
-            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=rose&shade=200" alt="Your Company" class="h-8 w-auto" />
+            <!-- <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=rose&shade=200" alt="Your Company" class="h-8 w-auto" /> -->
+            <img src="img/jada-lee-hamilton-logo.svg" alt="Jada-Lee Hamilton Logo" class="h-8 w-auto" />
           </div>
           <!--Desktop Navigation Links -->
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-              <a href="/" aria-current="page" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Home</a>
-              <a href="about-me.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">About Me</a>
+              <a href="/" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Home</a>
+              <a href="about-me.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800 bg-gray-950/50">About Me</a>
               <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Projects</a>
               <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Contact</a>
             </div>
@@ -65,8 +70,8 @@
     <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
       <div class="space-y-1 px-10 pt-2 pb-5 text-end">
         <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-        <a href="/" aria-current="page" class="block rounded-md hover:bg-rose-100 hover:text-rose-800 px-3 py-2 text-base font-medium text-white">Home</a>
-        <a href="about-me.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">About Me</a>
+        <a href="/" aria-current="page" class="block rounded-md hover:bg-rose-100 hover:text-rose-800 px-3 py-2 text-base font-medium text-gray-300">Home</a>
+        <a href="about-me.html" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-rose-100 hover:text-rose-800">About Me</a>
         <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">Projects</a>
         <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">Contact</a>
       </div>
