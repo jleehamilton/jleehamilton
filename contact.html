@@ -8,14 +8,7 @@
     <title>Jada's Portfolio | Contact</title>
 
     <!-- TailwindCSS Play CDN Link -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-
-    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
-    <style type="text/tailwindcss">
-        @custom-variant hover (&:hover);
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Styles -->
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
@@ -26,116 +19,121 @@
 
      
 </head>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
 <body class="bg-rose-50 text-black w-0px">
 
-<header>
-  <nav class="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
-      <div class="relative flex h-20 items-center">
-          
-        <div class="flex flex-1 items-center lg:justify-between sm:items-stretch sm:justify-start">
-            <div>
-                <h1 class="text-xl font-bold text-rose-100">Jada-Lee Hamilton</h1>
-            </div>
-            <!-- Logo -->
-            <div class="flex shrink-0 items-center">
-            <img src="img/jada-lee-hamilton-logo.svg" alt="Jada-Lee Hamilton Logo" class="h-8 w-auto" />
-            </div>
-            <!--Desktop Navigation Links -->
-            <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-                <a href="/" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Home</a>
-                <a href="about-me.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">About Me</a>
-                <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Projects</a>
-                <a href="contact.html" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Contact</a>
+  <header class="bg-gray-900">
+    <nav class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo + Name -->
+        <div class="flex items-center gap-3">
+          <img src="img/jada-lee-hamilton-logo.svg" alt="Jada-Lee Hamilton Logo" class="h-8 w-auto rounded-sm"/>
+          <span class="text-xl font-semibold text-white">
+          Jada-Lee Hamilton
+          </span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden sm:flex items-center space-x-4">
+          <a href="/" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white transition">
+          Home
+          </a>
+
+          <a href="about-me.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white transition">
+          About Me
+          </a>
+
+          <a href="projects.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white transition">
+          Projects
+          </a>
+
+          <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-800">
+          Contact
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="sm:hidden p-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition"
+        onclick="toggleMenu()">
+        ☰
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden sm:hidden flex flex-col space-y-2 pb-4">
+        <a href="/" class="block px-3 py-2 rounded-md text-white bg-gray-800">
+        Home
+        </a>
+
+        <a href="about-me.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-white transition">
+        About Me
+        </a>
+
+        <a href="projects.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-white transition">
+        Projects
+        </a>
+
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-white transition">
+        Contact
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main class="p-10 flex flex-col gap-5">
+      <div>
+          <img src="https://images.pexels.com/photos/7394377/pexels-photo-7394377.jpeg" alt="hero image" class="w-full h-96 object-cover rounded-lg">
+      </div>
+      <section class="grid md:grid-cols-2 gap-10 items-start">
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold mb-4">Get in touch</h2>
+          <p class="text-gray-600 mb-6">Have a project in mind? I'd love to hear from you.</p>
+          <ul class="space-y-2">
+            <li>📧Email: <a href="mailto:jadalee.a.hamilton@gmail.com" class="text-rose-500 hover:underline">jadalee.a.hamilton@gmail.com</a></li>
+            <li>📱Phone: <a href="tel:+17097636888" class="text-rose-500 hover:underline">+1 (709) 763-6888</a></li>
+          </ul>
+        </div>
+          <div class="bg-gray-400/50 p-8 rounded-2xl shadow-sm border border-gray-100">
+              <form action="https://formspree.io/f/xwvareqj" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" name="name" id="name" required class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-pink-800/50 focus:border-transparent outline-none transition duration-200" 
+                    placeholder="Jane Doe">
                 </div>
-            </div>
-        </div>
-        <div class="absolute inset-y-0 right-10 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-rose-100 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-rose-100">
-            <span class="absolute -inset-0.5"></span>
-            <span class="sr-only">Open main menu</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
-              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
-              <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" name="email" id="email" required class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-pink-800/50 focus:border-transparent outline-none transition duration-200" 
+                    placeholder="jane@example.com">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-pink-800/50 focus:border-transparent outline-none transition duration-200" 
+                    placeholder="Reason for contacting..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-pink-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-800/50 focus:ring-offset-2 transition duration-200 ease-in-out transform active:scale-[0.98]">
+                    Send Message
+                </button>
+                <input type="hidden" name="_next" value="thank-you.html">
+              </form>
+          </div>
+      </section>
+  </main>
+  <footer class="bg-gray-900 text-gray-300 mt-16">
+    <div class="max-w-7xl mx-auto px-6 py-8 text-center">
+      <p class="text-sm">© 2026 Jada-Lee Hamilton — Web Developer Portfolio</p>
+      <div class="flex justify-center gap-6 mt-4">
+        <a href="https://github.com/jleehamilton" class="hover:text-white"> GitHub </a> 
+        <a href="https://www.linkedin.com/in/jada-lee-hamilton/" class="hover:text-white"> LinkedIn </a>
       </div>
     </div>
-    <!-- Mobile menu, show/hide based on menu open state -->
-    <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
-      <div class="space-y-1 px-10 pt-2 pb-5 text-end">
-        <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-        <a href="/" class="block rounded-md hover:bg-rose-100 hover:text-rose-800 px-3 py-2 text-base font-medium text-gray-300">Home</a>
-        <a href="about-me.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">About Me</a>
-        <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">Projects</a>
-        <a href="contact.html" aria-current="page" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800 text-white">Contact</a>
-      </div>
-    </el-disclosure>
-  </nav>
-</header>
-
-
-<main class="p-10 flex flex-col gap-5">
-    <div>
-        <img src="https://images.pexels.com/photos/7394377/pexels-photo-7394377.jpeg" alt="hero image" class="w-full h-96 object-cover rounded-lg">
-    </div>
-    <div class="lg:mx-auto">
-        <h1 class="text-2xl font-bold">Get in Touch</h1>
-        <p class="text-lg">Feel free to reach out to me!</p>
-
-        <ul class="list-disc list-inside">
-            <li>Email: <a href="mailto:jadalee.a.hamilton@gmail.com" class="text-rose-500 hover:underline">jadalee.a.hamilton@gmail.com</a></li>
-            <!-- <li>LinkedIn: <a href="https://www.linkedin.com/in/jada-lee-hamilton/" class="text-rose-500 hover:underline" target="_blank">Jada-Lee Hamilton</a></li> -->
-             <li>Phone: <a href="tel:+1234567890" class="text-rose-500 hover:underline">+1 (709) 763-6888</a></li>
-        </ul>
-
-        <p class="text-lg">Contact form coming soon!</p>
-
-    </div>
-    <section class=" py-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-md mx-auto bg-gray-400/50 p-8 rounded-2xl shadow-sm border border-gray-100">
-            <div class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-900">Get in touch</h2>
-            <p class="mt-2 text-gray-600">Have a project in mind? Let's talk.</p>
-            </div>
-
-            <!-- Replace 'your-endpoint' with your actual backend or service like Formspree -->
-            <form action="#" method="POST" class="space-y-6">
-            <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                <input type="text" name="name" id="name" required 
-                class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-rose-800/50 focus:border-transparent outline-none transition duration-200" 
-                placeholder="Jane Doe">
-            </div>
-
-            <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                <input type="email" name="email" id="email" required 
-                class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-rose-800/50 focus:border-transparent outline-none transition duration-200" 
-                placeholder="jane@example.com">
-            </div>
-
-            <div>
-                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                <textarea id="message" name="message" rows="4" required 
-                class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-rose-800/50 focus:border-transparent outline-none transition duration-200" 
-                placeholder="Reason for contacting..."></textarea>
-            </div>
-
-            <button type="submit" 
-                class="w-full bg-rose-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-rose-800/50 focus:ring-offset-2 transition duration-200 ease-in-out transform active:scale-[0.98]">
-                Send Message
-            </button>
-            </form>
-        </div>
-    </section>
-</main>
+  </footer>
 
 </body>
 </html>

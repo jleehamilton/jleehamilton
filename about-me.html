@@ -8,13 +8,7 @@
     <title>Jada's Portfolio | About Me</title>
 
     <!-- TailwindCSS Play CDN Link -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-
-    <style type="text/tailwindcss">
-        @custom-variant hover (&:hover);
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Styles -->
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
@@ -25,116 +19,115 @@
 
      
 </head>
-<body class="bg-rose-50 text-black w-0px">
-<header>
-  <nav class="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-10">
-      <div class="relative flex h-20 items-center">
-          
-        <div class="flex flex-1 items-center lg:justify-between sm:items-stretch sm:justify-start">
-          <div>
-              <h1 class="text-xl font-bold text-rose-100">Jada-Lee Hamilton</h1>
-          </div>
-          <!-- Logo -->
-          <div class="flex shrink-0 items-center">
-            <!-- <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=rose&shade=200" alt="Your Company" class="h-8 w-auto" /> -->
-            <img src="img/jada-lee-hamilton-logo.svg" alt="Jada-Lee Hamilton Logo" class="h-8 w-auto" />
-          </div>
-          <!--Desktop Navigation Links -->
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-4">
-              <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-              <a href="/" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Home</a>
-              <a href="about-me.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800 bg-gray-950/50">About Me</a>
-              <a href="projects.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Projects</a>
-              <a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-rose-100 hover:bg-white/5 hover:text-rose-800">Contact</a>
-            </div>
-          </div>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
+<body class="bg-rose-50 text-black">
+  <header class="bg-gray-900">
+    <nav class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo + Name -->
+        <div class="flex items-center gap-3">
+          <img src="img/jada-lee-hamilton-logo.svg" alt="Jada-Lee Hamilton Logo" class="h-8 w-auto rounded-sm"/>
+          <span class="text-xl font-semibold text-white">
+          Jada-Lee Hamilton
+          </span>
         </div>
-        <div class="absolute inset-y-0 right-10 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-rose-100 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-rose-100">
-            <span class="absolute -inset-0.5"></span>
-            <span class="sr-only">Open main menu</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
-              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
-              <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden sm:flex items-center space-x-4">
+          <a href="/" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white transition">
+          Home
+          </a>
+
+          <a href="about-me.html" class="px-3 py-2 rounded-md text-sm font-medium text-white bg-gray-800">
+          About Me
+          </a>
+
+          <a href="projects.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white transition">
+          Projects
+          </a>
+
+          <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-800 hover:text-white transition">
+          Contact
+          </a>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="sm:hidden p-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md transition"
+        onclick="toggleMenu()">
+        ☰
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden sm:hidden flex flex-col space-y-2 pb-4">
+        <a href="/" class="block px-3 py-2 rounded-md text-white bg-gray-800">
+        Home
+        </a>
+
+        <a href="about-me.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-white transition">
+        About Me
+        </a>
+
+        <a href="projects.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-white transition">
+        Projects
+        </a>
+
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-white transition">
+        Contact
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main class="p-10 flex flex-col gap-5">
+      <h1 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold">👋 Hello there, I'm Jada</h1>
+      <h2 class="text-center text-md md:text-lg lg:text-xl font-semibold">💻 UI/UX Designer & Developer from NAIT | Passionate about creative digital storytelling and front-end design</h2>
+      <img src="img/jada-lee-hamilton-logo.svg" alt="Jada-Lee Hamilton Logo" class="mx-auto h-32 w-auto round-sm"/>
+      <hr class="border border-2 border-rose-300">
+      <section class="grid md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">🧠 About Me</h3>
+          <hr class="border border-2 border-rose-300 my-4">
+          <p>I'm a Web Design and Development student at <strong>NAIT</strong>, focusing on building <strong>responsive</strong>, <strong>accessible</strong>, and <strong>visually appealing</strong> websites.</p>
+          <p>I like combining technology and creativity by using design tools and code to turn concepts into interactive designs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">📚 Skills Learnt</h3>
+          <hr class="border border-2 border-rose-300 my-4">
+            <ul class="space-y-1">
+                <li>🖥️ HTML & CSS</li>
+                <li>🎨 UI/UX Design</li>
+                <li>💻 JavaScript</li>
+                <li>⚛️ PHP</li>
+                <li>🧩 MySQL</li>
+                <li>🌐 SEO Best Practices</li>
+                <li>🖥️ Designing Responsive Websites</li>
+            </ul>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">🧶 Outside of Coding</h3>
+          <hr class="border border-2 border-rose-300 my-4">
+          <p>When I’m not coding, I enjoy crocheting and exploring creative ideas that inspire my web projects.</p>
+          <p>I believe every website has a story to tell, and I love using design to make those stories come to life.</p>
+        </div>
+      </section>
+      <hr class="border border-2 border-rose-300">
+      <div class="flex items-center justify-center">
+          <p class="italic">✨ Thanks for visiting my profile! Feel free to explore my repositories and projects.</p>
+      </div>
+  </main>
+  <footer class="bg-gray-900 text-gray-300 mt-16">
+    <div class="max-w-7xl mx-auto px-6 py-8 text-center">
+      <p class="text-sm">© 2026 Jada-Lee Hamilton — Web Developer Portfolio</p>
+      <div class="flex justify-center gap-6 mt-4">
+        <a href="https://github.com/jleehamilton" class="hover:text-white"> GitHub </a> 
+        <a href="https://www.linkedin.com/in/jada-lee-hamilton/" class="hover:text-white"> LinkedIn </a>
       </div>
     </div>
-    <!-- Mobile menu, show/hide based on menu open state -->
-    <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
-      <div class="space-y-1 px-10 pt-2 pb-5 text-end">
-        <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-        <a href="/" aria-current="page" class="block rounded-md hover:bg-rose-100 hover:text-rose-800 px-3 py-2 text-base font-medium text-gray-300">Home</a>
-        <a href="about-me.html" class="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-rose-100 hover:text-rose-800">About Me</a>
-        <a href="projects.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">Projects</a>
-        <a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-rose-100 hover:text-rose-800">Contact</a>
-      </div>
-    </el-disclosure>
-  </nav>
-</header>
-
-<main class="p-10 flex flex-col gap-5">
-    <h1 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold">👋 Hello there, I'm Jada-Lee Hamilton</h1>
-    <h2 class="text-center text-md md:text-lg lg:text-xl font-semibold">💻 Web Design & Development Student at NAIT | Passionate about creative digital storytelling and front-end design</h2>
-    
-    <hr class="border border-2 border-rose-300">
-    <section class="hero about-me-hero" id="about-me-hero">
-      <div class="container">
-        <h3 class="text-md md:text-lg lg:text-xl font-semibold">🧠 About Me</h3>
-      </div>
-    </section>
-    <section class="flex flex-col gap-5 text-center">
-        
-        <p>I'm a Web Design and Development student at <strong>NAIT</strong>, focusing on building <strong>responsive</strong>, <strong>accessible</strong>, and <strong>visually appealing</strong> websites.</p>
-        
-        <p>I like combining technology and creativity by using design tools and code to turn concepts into interactive designs.</p>
-        
-        <p>🎨 I love working with <strong>JavaScript</strong>, <strong>HTML</strong>, and <strong>CSS</strong>.</p>
-    </section>
-    
-    <hr class="border border-2 border-rose-300">
-    <section class="hero learn-hero">
-      <div class="container">
-        <h3 class="text-md md:text-lg lg:text-xl font-semibold">📚 Currently Learning</h3>
-      </div>
-    </section>
-    <section class="text-center">
-        <ul class="list-disc list-inside">
-            <li>⚛️ PHP</li>
-            <li>🧩 MySQL</li>
-            <li>🌐 SEO Best Practices</li>
-            <li>🖥️ Designing Responsive Websites</li>
-        </ul>
-    </section>
-    
-    <hr class="border border-2 border-rose-300">
-    <section class="hero crochet-hero">
-      <div class="container">
-        <h3 class="text-md md:text-lg lg:text-xl font-semibold">🧶 Outside of Coding</h3>
-      </div>
-    </section>
-    <section class="flex flex-col gap-5 text-center">
-        <p>When I’m not coding, I enjoy crocheting and exploring creative ideas that inspire my web projects.</p>
-        <p>I believe every website has a story to tell, and I love using design to make those stories come to life.</p>
-    </section>
-    
-    <hr class="border border-2 border-rose-300">
-    <section class="hero conclusion-hero">
-      <div class="container">
-        <h3 class="text-md md:text-lg lg:text-xl font-semibold">Goodbye !!!</h3>
-      </div>
-    </section>
-    
-    <section class="flex items-center justify-center h-screen">
-        <p class="italic">✨ Thanks for visiting my profile! Feel free to explore my repositories and projects.</p>
-    </section>
-</main>
-
+  </footer>
 </body>
 </html>
