@@ -10,6 +10,28 @@
     <!-- TailwindCSS Play CDN Link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.6s ease;
+        }
+
+        .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+        }
+
+        /* stagger delay helpers */
+
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+    </style>
+
     <!-- Styles -->
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <!-- <link rel="stylesheet" href="css/styles.css"> -->

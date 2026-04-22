@@ -10,6 +10,28 @@
     <!-- TailwindCSS Play CDN Link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.6s ease;
+        }
+
+        .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+        }
+
+        /* stagger delay helpers */
+
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+    </style>
+
     <!-- Styles -->
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
@@ -93,13 +115,13 @@
       </div>
       <hr class="border border-2 border-rose-300">
       <section class="grid md:grid-cols-3 gap-6 text-center">
-        <div class="bg-white p-6 rounded-2xl shadow-md">
+        <div class="reveal delay-1 bg-white p-6 rounded-2xl shadow-md">
           <h3 class="text-xl font-semibold mb-2">🧠 About Me</h3>
           <hr class="border border-2 border-rose-300 my-4">
           <p>I'm a Web Design and Development student at <strong>NAIT</strong>, focusing on building <strong>responsive</strong>, <strong>accessible</strong>, and <strong>visually appealing</strong> websites.</p>
           <p>I like combining technology and creativity by using design tools and code to turn concepts into interactive designs.</p>
         </div>
-        <div class="bg-white p-6 rounded-2xl shadow-md">
+        <div class="reveal delay-1 bg-white p-6 rounded-2xl shadow-md">
           <h3 class="text-xl font-semibold mb-2">📚 Skills Learnt</h3>
           <hr class="border border-2 border-rose-300 my-4">
             <ul class="space-y-1">
@@ -112,7 +134,7 @@
                 <li>🖥️ Designing Responsive Websites</li>
             </ul>
         </div>
-        <div class="bg-white p-6 rounded-2xl shadow-md">
+        <div class="reveal delay-1bg-white p-6 rounded-2xl shadow-md">
           <h3 class="text-xl font-semibold mb-2">🧶 Outside of Coding</h3>
           <hr class="border border-2 border-rose-300 my-4">
           <p>When I’m not coding, I enjoy crocheting and exploring creative ideas that inspire my web projects.</p>
@@ -141,6 +163,19 @@
       once: true,         // only animate once
       offset: 100         // start slightly before visible
     });
+  </script>
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    }, {
+    threshold: 0.15
+    });
+    revealElements.forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
