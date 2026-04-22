@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a website for my portfolio">
 
-    <title>Jada's Website</title>
+    <title>Jada's Portfolio | Home</title>
 
     <!-- TailwindCSS Play CDN Link -->
      <script src="https://cdn.tailwindcss.com"></script>
@@ -14,6 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
 
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
     <!-- Styles -->
@@ -108,19 +110,19 @@
                 </a>
             </div>
         </div>
-        <div>
-            <img src="img/me-jada.webp" alt="Portfolio hero" class="rounded-2xl w-full object-cover">
+        <div data-aos="zoom-in">
+            <img src="img/me-jada.webp" alt="Portfolio hero" class="rounded-2xl w-full object-cover" >
             <!-- <img src="https://images.pexels.com/photos/7394377/pexels-photo-7394377.jpeg" alt="Portfolio hero" class="rounded-2xl shadow-lg w-full h-80 object-cover"> -->
         </div>
     </section>
   </main>
   <footer class="bg-gray-900 text-gray-300 mt-16">
     <div class="max-w-7xl mx-auto px-6 py-8 text-center">
-      <p class="text-sm">© 2026 Jada-Lee Hamilton — Web Developer Portfolio</p>
-      <div class="flex justify-center gap-6 mt-4">
+      <div class="flex justify-center gap-6 py-4 mt-4">
         <a href="https://github.com/jleehamilton" class="hover:text-white"> GitHub </a> 
         <a href="https://www.linkedin.com/in/jada-lee-hamilton/" class="hover:text-white"> LinkedIn </a>
       </div>
+      <p class="text-sm">© 2026 Jada-Lee Hamilton — UI/UX Designer & Developer Portfolio</p>
     </div>
   </footer>
 
@@ -129,6 +131,14 @@
         <img src="https://images.pexels.com/photos/7394377/pexels-photo-7394377.jpeg" alt="hero image" class="w-full h-96 object-cover rounded-lg">
     </div>
 </main> -->
-
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,      // animation speed
+    once: true,         // only animate once
+    offset: 100         // start slightly before visible
+  });
+</script>
 </body>
 </html>

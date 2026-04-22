@@ -25,7 +25,7 @@
     menu.classList.toggle("hidden");
   }
 </script>
-<body class="bg-rose-50 text-black w-0px">
+<body class="bg-rose-50 text-black min-h-screen">
 
   <header class="bg-gray-900">
     <nav class="max-w-7xl mx-auto px-6">
@@ -66,7 +66,7 @@
 
       <!-- Mobile Menu -->
       <div id="mobileMenu" class="hidden sm:hidden flex flex-col space-y-2 pb-4">
-        <a href="/" class="block px-3 py-2 rounded-md text-white bg-gray-800">
+        <a href="/" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-white transition">
         Home
         </a>
 
@@ -78,7 +78,7 @@
         Projects
         </a>
 
-        <a href="contact.html" class="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-white transition">
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-white bg-gray-800">
         Contact
         </a>
       </div>
@@ -127,13 +127,21 @@
   </main>
   <footer class="bg-gray-900 text-gray-300 mt-16">
     <div class="max-w-7xl mx-auto px-6 py-8 text-center">
-      <p class="text-sm">© 2026 Jada-Lee Hamilton — Web Developer Portfolio</p>
-      <div class="flex justify-center gap-6 mt-4">
+      <div class="flex justify-center gap-6 py-4 mt-4">
         <a href="https://github.com/jleehamilton" class="hover:text-white"> GitHub </a> 
         <a href="https://www.linkedin.com/in/jada-lee-hamilton/" class="hover:text-white"> LinkedIn </a>
       </div>
+      <p class="text-sm">© 2026 Jada-Lee Hamilton — UI/UX Designer & Developer Portfolio</p>
     </div>
   </footer>
-
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,      // animation speed
+      once: true,         // only animate once
+      offset: 100         // start slightly before visible
+    });
+  </script>
 </body>
 </html>
